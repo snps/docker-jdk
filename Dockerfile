@@ -5,7 +5,7 @@ RUN apk update && apk add \
 	bash \
 	openjdk8
 
-ENV JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk/bin
-ENV PATH=$JAVA_HOME:$PATH
+ENV JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk
+ENV PATH=$JAVA_HOME/bin:$PATH
 
 CMD bash
